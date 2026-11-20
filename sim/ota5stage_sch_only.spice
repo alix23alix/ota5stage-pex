@@ -1,0 +1,9 @@
+.subckt ota5stage vbais vdd output vn vp
+*.PININFO vdd:B output:O vbais:B vp:I vn:I
+XM1 net1 vp net2 0 sg13_lv_nmos w=6u l=2u ng=1 m=4
+XM2 output vn net2 0 sg13_lv_nmos w=6u l=2u ng=1 m=4
+XM3 net1 net1 vdd vdd sg13_lv_pmos w=6u l=2u ng=1 m=4
+XM4 output net1 vdd vdd sg13_lv_pmos w=6u l=2u ng=1 m=4
+XM5 net2 vbais 0 0 sg13_lv_nmos w=3u l=1u ng=1 m=2
+XM6 vbais vbais 0 0 sg13_lv_nmos w=3u l=1u ng=1
+.ends

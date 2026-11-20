@@ -1,0 +1,5 @@
+*.raw
+*.xwd
+venv/
+__pycache__/
+*.sym.sch

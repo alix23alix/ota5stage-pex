@@ -1,0 +1,20 @@
+* Top-level PEX testbench
+V1 vn 0 0.6
+V2 vp 0 dc 0.6 ac 1
+V4 vdd 0 1.2
+I0 vdd vbais 20u
+x2 vbais vdd output vn vp ota5stage
+C1 output 0 1p
+.lib cornerMOSlv.lib mos_tt
+.include ota5stage_sch_only.spice
+.control
+save all
+op
+ac dec 20 1k 1G
+let gain_db = db(v(output))
+let ph = 180/pi*cph(v(output))
+meas ac dcgain find gain_db at=1k
+meas ac ugf when gain_db=0
+meas ac ph_at_ugf find ph when gain_db=0
+.endc
+.end

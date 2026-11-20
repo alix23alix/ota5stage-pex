@@ -1,0 +1,44 @@
+* NGSPICE file created from ota5stage.ext - technology: ihp-sg13g2
+
+.subckt ota5stage vbais vdd output vn vp
+X0 a_468_n3251# vp a_0_n3251# 0 sg13_lv_nmos ad=1.14p pd=6.38u as=1.14p ps=6.38u w=6u l=2u
+X1 0 vbais vbais 0 sg13_lv_nmos ad=0.57p pd=3.38u as=1.02p ps=6.68u w=3u l=1u
+X2 vdd a_0_n3251# output vdd sg13_lv_pmos ad=1.14p pd=6.38u as=1.14p ps=6.38u w=6u l=2u
+X3 vdd a_0_n3251# a_0_n3251# vdd sg13_lv_pmos ad=1.14p pd=6.38u as=2.04p ps=12.68u w=6u l=2u
+X4 output vn a_468_n3251# 0 sg13_lv_nmos ad=1.14p pd=6.38u as=1.14p ps=6.38u w=6u l=2u
+X5 vdd a_0_n3251# a_0_n3251# vdd sg13_lv_pmos ad=1.14p pd=6.38u as=1.14p ps=6.38u w=6u l=2u
+X6 output a_0_n3251# vdd vdd sg13_lv_pmos ad=1.14p pd=6.38u as=1.14p ps=6.38u w=6u l=2u
+X7 a_468_n3251# vbais 0 0 sg13_lv_nmos ad=0.57p pd=3.38u as=0.57p ps=3.38u w=3u l=1u
+X8 output vn a_468_n3251# 0 sg13_lv_nmos ad=1.14p pd=6.38u as=1.14p ps=6.38u w=6u l=2u
+X9 a_468_n3251# vn output 0 sg13_lv_nmos ad=1.14p pd=6.38u as=1.14p ps=6.38u w=6u l=2u
+X10 output a_0_n3251# vdd vdd sg13_lv_pmos ad=1.14p pd=6.38u as=1.14p ps=6.38u w=6u l=2u
+X11 a_468_n3251# vn output 0 sg13_lv_nmos ad=1.14p pd=6.38u as=1.14p ps=6.38u w=6u l=2u
+X12 a_0_n3251# vp a_468_n3251# 0 sg13_lv_nmos ad=2.04p pd=12.68u as=1.14p ps=6.38u w=6u l=2u
+X13 a_468_n3251# vp a_0_n3251# 0 sg13_lv_nmos ad=1.14p pd=6.38u as=2.04p ps=12.68u w=6u l=2u
+X14 a_0_n3251# vp a_468_n3251# 0 sg13_lv_nmos ad=1.14p pd=6.38u as=1.14p ps=6.38u w=6u l=2u
+X15 vdd a_0_n3251# output vdd sg13_lv_pmos ad=1.14p pd=6.38u as=1.14p ps=6.38u w=6u l=2u
+X16 a_0_n3251# a_0_n3251# vdd vdd sg13_lv_pmos ad=1.14p pd=6.38u as=1.14p ps=6.38u w=6u l=2u
+X17 a_0_n3251# a_0_n3251# vdd vdd sg13_lv_pmos ad=2.04p pd=12.68u as=1.14p ps=6.38u w=6u l=2u
+X18 0 vbais a_468_n3251# 0 sg13_lv_nmos ad=1.02p pd=6.68u as=0.57p ps=3.38u w=3u l=1u
+C0 a_0_n3251# vn 1.59051f
+C1 a_0_n3251# output 3.20082f
+C2 vp vn 0.51541f
+C3 vp output 0.02738f
+C4 a_0_n3251# a_468_n3251# 0.36154f
+C5 a_468_n3251# vp 1.90637f
+C6 a_0_n3251# vdd 16.0762f
+C7 output vn 1.08412f
+C8 a_468_n3251# vn 0.90848f
+C9 a_468_n3251# output 0.34229f
+C10 a_0_n3251# vp 0.96352f
+C11 vn vdd 0.01238f
+C12 output vdd 1.53428f
+C13 a_468_n3251# vbais 0.31437f
+C14 vbais 0 3.6137f
+C15 vp 0 7.11533f
+C16 vn 0 6.44295f
+C17 output 0 1.35694f
+C18 vdd 0 0.96526f
+C19 a_468_n3251# 0 2.30494f $ **FLOATING
+C20 a_0_n3251# 0 2.51883f $ **FLOATING
+.ends
