@@ -1,5 +1,7 @@
 # OTA 5-stage: schematic vs PEX (IHP SG13G2)
 
+![Layout](layout/ota5stage_layout.png)
+
 Five-transistor OTA with schematic-level and post-layout (Magic PEX) simulations.
 
 ## Layout
