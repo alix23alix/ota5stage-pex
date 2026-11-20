@@ -7,7 +7,7 @@ Five-transistor OTA with schematic-level and post-layout (Magic PEX) simulations
 ## Layout
 - `xschem/`  schematic, symbols and testbenches (`ota5stage_pex.sym` is a `type=primitive` copy that points to the PEX netlist)
 - `layout/`  GDS
-- `pex/`     extracted netlists (`ota5stage_pex_fixed.spice`: subckt `ota5stage`, `ota5stage_pex_x.spice`: subckt `ota5stage_pex`, same circuit; pin order `vbais vdd output vn vp`)
+- `pex/`     extracted netlists (`ota5stage_magic_raw.pex.spice`: raw Magic output, original pin order `vbais vp vn 0 vdd output`; `ota5stage_pex_fixed.spice`: subckt `ota5stage`, `ota5stage_pex_x.spice`: subckt `ota5stage_pex`, same circuit; pin order `vbais vdd output vn vp`)
 - `sim/`     top-level ngspice testbenches. Run from inside `sim/`:
   `ngspice -b tb_pex_top.spice` or `ngspice -b tb_sch_top.spice`
 
